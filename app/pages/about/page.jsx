@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-      <nav className="bg-[#F9F9F9] text-black py-4 px-6 mt-20 w-[94%] m-auto rounded-sm">
+      <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">
           <Link href={"/"} className="font-bold">
             Home
@@ -24,17 +24,17 @@ const Page = () => {
       </nav>
       <Shakehand />
       {/* person-using-artechnology */}
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <section class="text-gray-600 body-font max-w-custom m-auto">
+        <div class="max-w-customm px-5 py-24 mx-auto flex flex-wrap">
           <div class="flex flex-wrap-reverse w-full justify-center items-center">
-            <div class="lg:max-w-lg  md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <div class="lg:max-w-lg  md:w-1/3 w-5/6 mb-10 md:mb-0">
               <Image
                 class="object-cover object-center rounded"
                 alt="hero"
                 src={person}
               />
             </div>
-            <div class="lg:max-w-lg  md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <div class="lg:max-w-lg  md:w-full w-5/6 mb-10 md:mb-0">
               <div class="flex relative pb-12">
                 <div class="flex-grow pl-4">
                   <h1 class="font-bold leading-10 text-3xl text-[#000000] mb-1">

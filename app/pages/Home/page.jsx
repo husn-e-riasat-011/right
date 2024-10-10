@@ -28,201 +28,206 @@ const Page = () => {
     <div>
       <Navbar />
       {/* Hero section */}
+
       <div
-        className=" font-sans max-w-custom m-auto flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl mb-3"
+        className="w-full "
         style={{
           background:
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
         }}
       >
-        <svg
-          width="1024"
-          height="369"
-          viewBox="0 0 1024 369"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-0 left-0 z-30"
-        >
-          <path
-            d="M0 238.09C21.1857 224.814 75.9297 203.748 125.42 225.699C174.909 247.649 223.439 277.919 241.517 290.311C293.172 321.575 417.952 405.019 615.234 346.957C812.515 288.895 968.612 91.4597 1022 0"
-            stroke="url(#paint0_linear_192_9462)"
-            stroke-opacity="0.3"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_192_9462"
-              x1="-2.24454e-06"
-              y1="236.5"
-              x2="1025.96"
-              y2="26.318"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#55F4EA" />
-              <stop offset="0.18" stop-color="#00E3F6" />
-              <stop offset="0.33" stop-color="#00D0FF" />
-              <stop offset="0.5" stop-color="#2C83E9" />
-              <stop offset="0.655" stop-color="#336BD0" />
-              <stop offset="0.84" stop-color="#2D63C4" />
-              <stop offset="1" stop-color="#265BB8" />
-            </linearGradient>
-          </defs>
-        </svg>
+        <div className=" font-sans max-w-custom m-auto flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl mb-3">
+          {/* front head  */}
+          <svg
+            width="1024"
+            height="369"
+            viewBox="0 0 1024 369"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-0 left-0 z-30"
+          >
+            <path
+              d="M0 238.09C21.1857 224.814 75.9297 203.748 125.42 225.699C174.909 247.649 223.439 277.919 241.517 290.311C293.172 321.575 417.952 405.019 615.234 346.957C812.515 288.895 968.612 91.4597 1022 0"
+              stroke="url(#paint0_linear_192_9462)"
+              stroke-opacity="0.3"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_192_9462"
+                x1="-2.24454e-06"
+                y1="236.5"
+                x2="1025.96"
+                y2="26.318"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#55F4EA" />
+                <stop offset="0.18" stop-color="#00E3F6" />
+                <stop offset="0.33" stop-color="#00D0FF" />
+                <stop offset="0.5" stop-color="#2C83E9" />
+                <stop offset="0.655" stop-color="#336BD0" />
+                <stop offset="0.84" stop-color="#2D63C4" />
+                <stop offset="1" stop-color="#265BB8" />
+              </linearGradient>
+            </defs>
+          </svg>
 
-        {/* footer vector line */}
-        <svg
-          width="1702"
-          height="843"
-          viewBox="0 0 1702 843"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute right-0 bottom-0"
-        >
-          <path
-            d="M2 841C48.9214 770.903 190.167 640.489 379.778 679.613C589.511 727.06 1050.15 899.197 1339.86 432.643C1425.7 294.417 1583.61 -8.47984 1702 2.27926"
-            stroke="url(#paint0_linear_192_9472)"
-            stroke-opacity="0.3"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_192_9472"
-              x1="2"
-              y1="542.663"
-              x2="1741.55"
-              y2="283.361"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#265BB8" />
-              <stop offset="0.166667" stop-color="#2D63C4" />
-              <stop offset="0.333333" stop-color="#336BD0" />
-              <stop offset="0.5" stop-color="#2C83E9" />
-              <stop offset="0.666667" stop-color="#00D0FF" />
-              <stop offset="0.833333" stop-color="#00E3F6" />
-              <stop offset="1" stop-color="#55F4EA" />
-            </linearGradient>
-          </defs>
-        </svg>
+          {/* footer vector line */}
+          <svg
+            width="1702"
+            height="843"
+            viewBox="0 0 1702 843"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute right-0 bottom-0"
+          >
+            <path
+              d="M2 841C48.9214 770.903 190.167 640.489 379.778 679.613C589.511 727.06 1050.15 899.197 1339.86 432.643C1425.7 294.417 1583.61 -8.47984 1702 2.27926"
+              stroke="url(#paint0_linear_192_9472)"
+              stroke-opacity="0.3"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_192_9472"
+                x1="2"
+                y1="542.663"
+                x2="1741.55"
+                y2="283.361"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#265BB8" />
+                <stop offset="0.166667" stop-color="#2D63C4" />
+                <stop offset="0.333333" stop-color="#336BD0" />
+                <stop offset="0.5" stop-color="#2C83E9" />
+                <stop offset="0.666667" stop-color="#00D0FF" />
+                <stop offset="0.833333" stop-color="#00E3F6" />
+                <stop offset="1" stop-color="#55F4EA" />
+              </linearGradient>
+            </defs>
+          </svg>
 
-        <div className="mt-24 ">
-          <h1 className="font-sans text-6xl font-bold leading-[89px] tracking-wide  text-center text-[#FFFFFF] relative z-20">
-            Welcome to the
-            <span className="text-[#55F4EA] relative z-30">
-              {" "}
-              UndrRight
-            </span>{" "}
-          </h1>
-          <h3 className="relative z-30 font-sans text-4xl font-bold leading-tight tracking-wide  text-[30px]  text-center text-[#FFFFFF]">
-            your personal legal AI Assistant{" "}
-          </h3>
-        </div>
-        <section className="text-gray-600 body-font w-[80%] m-auto relative z-30">
-          <div className="container flex flex-wrap px-5 py-28 mx-auto items-center justify-center">
-            <div className=" w-[450px] md:pr-12  md:border-r-2 md:border-b-0 mb-10 md:mb-0 border-b-2 border-white text-center text-white">
-              <h1 className=" font-sans sm:text-3xl text-4xl font-medium title-font mb-2 text-[#55F4EA]">
-                For Consumers
-              </h1>
-              <p className=" font-sans font-normal leading-7 tracking-wide text-center text-xl   text-[#FFFFFF]">
-                Say goodbye to expensive legal consultation, long waits for
-                appointments, and confusing legal texts
-              </p>
-            </div>
-            <div className=" font-sans w-[450px] flex flex-col  md:pl-12 text-center text-white">
-              <h1 className="sm:text-3xl text-4xl font-medium title-font mb-2 text-[#55F4EA]">
-                For Lawyers
-              </h1>
-              <p className="font-sans font-normal leading-7 tracking-wide text-center text-xl  text-[#FFFFFF]">
-                Say goodbye to routine tasks. AI Lawyer automate your legal
-                research and paperwork, granting you.
-              </p>
-            </div>
+          <div className="mt-24 ">
+            <h1 className="font-sans text-6xl font-bold leading-[89px] tracking-wide  text-center text-[#FFFFFF] relative z-20">
+              Welcome to the
+              <span className="text-[#55F4EA] relative z-30">
+                {" "}
+                UndrRight
+              </span>{" "}
+            </h1>
+            <h3 className="relative z-30 font-sans text-4xl font-bold leading-tight tracking-wide  text-[30px]  text-center text-[#FFFFFF]">
+              your personal legal AI Assistant{" "}
+            </h3>
           </div>
+          <section className="text-gray-600 body-font w-[80%] m-auto relative z-30">
+            <div className="container flex flex-wrap px-5 py-28 mx-auto items-center justify-center">
+              <div className=" w-[450px] md:pr-12  md:border-r-2 md:border-b-0 mb-10 md:mb-0 border-b-2 border-white text-center text-white">
+                <h1 className=" font-sans sm:text-3xl text-4xl font-medium title-font mb-2 text-[#55F4EA]">
+                  For Consumers
+                </h1>
+                <p className=" font-sans font-normal leading-7 tracking-wide text-center text-xl   text-[#FFFFFF]">
+                  Say goodbye to expensive legal consultation, long waits for
+                  appointments, and confusing legal texts
+                </p>
+              </div>
+              <div className=" font-sans w-[450px] flex flex-col  md:pl-12 text-center text-white">
+                <h1 className="sm:text-3xl text-4xl font-medium title-font mb-2 text-[#55F4EA]">
+                  For Lawyers
+                </h1>
+                <p className="font-sans font-normal leading-7 tracking-wide text-center text-xl  text-[#FFFFFF]">
+                  Say goodbye to routine tasks. AI Lawyer automate your legal
+                  research and paperwork, granting you.
+                </p>
+              </div>
+            </div>
 
-          <div className="flex justify-center items-center ">
-            <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-2 text-[#FFFFFF] font-sans text-lg font-normal leading-6 tracking-widest cursor-pointer ">
-              Get Started
-            </button>
-            <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-2 text-[#FFFFFF] font-sans text-lg font-normal leading-6 tracking-widest ml-2  ">
-              How It Works
-            </button>
-          </div>
-        </section>
-        <div className=" py-6 my-16">
-          <div className="mx-auto px-6 lg:px-8">
-            <h2 className=" relative z-30 mb-4  font-sans text-5xl font-bold leading-[89px] tracking-[0.4px] text-center text-[#FFFFFF]">
-              As Featured In
-            </h2>
-            <div className="bg-[#A3A3A3] py-10 flex items-center gap-x-8 gap-y-10 justify-items-center rounded-xl  w-full relative">
-              <div className=" flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={left}
-                  width={140} // Fixed width
-                  height={40} // Fixed height
-                  className="h-10 w-[120px] object-contain cursor-pointer" // Fixed height with object containment
-                />
-              </div>
-              <div className="border-r border-black  last:border-r-0 flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={first}
-                  width={140} // Fixed width
-                  height={28} // Fixed height
-                  className="h-7 w-[200px] object-contain" // Fixed height with object containment
-                />
-              </div>
-              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={second}
-                  width={140} // Fixed width
-                  height={30} // Fixed height
-                  className="h-8 w-[200px] object-contain" // Fixed height with object containment
-                />
-              </div>
-              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={third}
-                  width={100} // Fixed width
-                  height={30} // Fixed height
-                  className="h-8 w-[100px] object-contain" // Fixed height with object containment
-                />
-              </div>
-              <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={fourth}
-                  width={140} // Fixed width
-                  height={30} // Fixed height
-                  className="h-8 w-[200px] object-contain" // Fixed height with object containment
-                />
-              </div>
-              <div className=" last:border-r-0 flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={five}
-                  width={140} // Fixed width
-                  height={30} // Fixed height
-                  className="h-8 w-[200px] object-contain" // Fixed height with object containment
-                />
-              </div>
+            <div className="flex justify-center items-center ">
+              <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-2 text-[#FFFFFF] font-sans text-lg font-normal leading-6 tracking-widest cursor-pointer ">
+                Get Started
+              </button>
+              <button className="border border-[#5E5E5E] rounded-xl bg-[#1B1B1C] px-3 py-2 text-[#FFFFFF] font-sans text-lg font-normal leading-6 tracking-widest ml-2  ">
+                How It Works
+              </button>
+            </div>
+          </section>
+          <div className=" py-6 my-16">
+            <div className="mx-auto px-6 lg:px-8">
+              <h2 className=" relative z-30 mb-4  font-sans text-5xl font-bold leading-[89px] tracking-[0.4px] text-center text-[#FFFFFF]">
+                As Featured In
+              </h2>
+              <div className="bg-[#A3A3A3] py-10 flex items-center gap-x-8 gap-y-10 justify-items-center rounded-xl  w-full relative">
+                <div className=" flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={left}
+                    width={140} // Fixed width
+                    height={40} // Fixed height
+                    className="h-10 w-[120px] object-contain cursor-pointer" // Fixed height with object containment
+                  />
+                </div>
+                <div className="border-r border-black  last:border-r-0 flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={first}
+                    width={140} // Fixed width
+                    height={28} // Fixed height
+                    className="h-7 w-[200px] object-contain" // Fixed height with object containment
+                  />
+                </div>
+                <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={second}
+                    width={140} // Fixed width
+                    height={30} // Fixed height
+                    className="h-8 w-[200px] object-contain" // Fixed height with object containment
+                  />
+                </div>
+                <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={third}
+                    width={100} // Fixed width
+                    height={30} // Fixed height
+                    className="h-8 w-[100px] object-contain" // Fixed height with object containment
+                  />
+                </div>
+                <div className="border-r border-black pr-4 last:border-r-0 flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={fourth}
+                    width={140} // Fixed width
+                    height={30} // Fixed height
+                    className="h-8 w-[200px] object-contain" // Fixed height with object containment
+                  />
+                </div>
+                <div className=" last:border-r-0 flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={five}
+                    width={140} // Fixed width
+                    height={30} // Fixed height
+                    className="h-8 w-[200px] object-contain" // Fixed height with object containment
+                  />
+                </div>
 
-              <div className=" flex justify-center">
-                <Image
-                  alt="Transistor"
-                  src={right}
-                  width={140} // Fixed width
-                  height={30} // Fixed height
-                  className="h-10 w-[120px] object-contain ml-8 cursor-pointer" // Fixed height with object containment
-                />
+                <div className=" flex justify-center">
+                  <Image
+                    alt="Transistor"
+                    src={right}
+                    width={140} // Fixed width
+                    height={30} // Fixed height
+                    className="h-10 w-[120px] object-contain ml-8 cursor-pointer" // Fixed height with object containment
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* Artical cards section */}
       <ArticalCards />
       {/* how it work */}
@@ -551,7 +556,7 @@ const Page = () => {
             {/* Backward Arrow */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 "
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -570,7 +575,7 @@ const Page = () => {
             {/* Forward Arrow */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 "
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
