@@ -232,7 +232,7 @@ const Page = () => {
       <ArticalCards />
       {/* how it work */}
       <div
-        className="max-w-custom m-auto rounded-2xl mt-10 pb-20 relative "
+        className="w-full m-auto rounded-2xl mt-10 pb-20 relative "
         style={{
           background:
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
@@ -307,7 +307,7 @@ const Page = () => {
           </defs>
         </svg>
 
-        <div className=" py-10 sm:py-32">
+        <div className=" py-10 sm:py-32 max-w-customm m-auto">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="flex items-center justify-center my-4 relative z-10">
               <div class="w-44 border border-[#5E5E5E] flex items-center justify-center bg-[#2F2F31] rounded-xl py-2 space-x-2">
@@ -342,7 +342,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <section class="text-[#CECECE] body-font">
+        <section class="text-[#CECECE] body-font max-w-customm m-auto">
           <div class="container px-5  mx-auto flex flex-wrap">
             <div class="lg:w-3/4 mx-auto mb-6">
               <div className="flex flex-wrap w-full bg-[#2F2F31] border border-[#5E5E5E] rounded-xl py-28 px-28 relative mb-10">
