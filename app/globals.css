@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: #4F46E5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4F46E5 !important;
+}
+
+.shadow-custom {
+  box-shadow: 0px 0px 50px 10px #00E3F61A;
+  /* Your box shadow */
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+@media screen and (max-width: 1217px) {
+  .wrp {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 785px) {
+  .monthly {
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 20px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1295px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1295px) {
+.marg {
+    margin-bottom: 100px;
+  }
+}
+
