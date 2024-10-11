@@ -3,7 +3,7 @@ import React from "react";
 const PricingCards = () => {
   return (
     <section
-      class="text-gray-600 body-font overflow-hidden max-w-custom mx-auto rounded-2xl mb-48 "
+      class="text-gray-600 body-font overflow-hidden w-full mx-auto rounded-2xl mb-48 "
       style={{
         background:
           "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
@@ -39,20 +39,17 @@ const PricingCards = () => {
                 Pricing
               </span>
             </div>
-            <h1
-              class="sm:text-4xl text-4xl font-semibold title-font mb-2 text-opacity-80 leading-tight tracking-wide
-text-[#FFFFFF] font-sans"
-            >
+            <h1 class=" text-5xl font-semibold title-font mb-2 text-opacity-80 leading-tight tracking-wide text-[#FFFFFF] font-sans">
               Simple and Flexible Pricing
             </h1>
-            <p class="text-xl  w-[70%] font-normal leading-7 text-[#FFFFFF] text-opacity-80 sm:leading-8 lg:leading-9 tracking-wider">
+            <p class="text-xl w-full md:w-[90%] lg:w-[70%] font-normal leading-7 text-[#FFFFFF] text-opacity-80 sm:leading-8 lg:leading-9 tracking-wider">
               Choose the plan that fits your legal needs and budget. Get started
               with flexible options designed for individuals, professionals, and
               businesses.
             </p>
           </div>
           <div class="flex border-2 rounded border-[#6B6B6D] w-[420px] h-16 bg-[#2F2F31] group">
-            <button class="py-1 px-4 bg-white text-gray-500 w-1/2 rounded-lg font-sans text-2xl font-medium leading-7 focus:outline-none group-focus-within:bg-[#2F2F31] group-focus-within:text-white">
+            <button class="py-1 px-4 bg-white text-gray-500 w-1/2 rounded-md font-sans text-2xl font-medium leading-7 focus:outline-none group-focus-within:bg-[#2F2F31] group-focus-within:text-white">
               Monthly
             </button>
             <button class="py-1 px-4 bg-[#2F2F31] text-white w-1/2 font-sans text-2xl font-medium leading-7 focus:outline-none group-focus-within:bg-white group-focus-within:rounded group-focus-within:text-gray-500">
@@ -130,7 +127,7 @@ text-[#FFFFFF] font-sans"
               </button>
             </div>
           </div>
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg border bg-[#EDEDED] border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+          <div class="flex flex-col p-6  mx-2 m-auto max-w-lg text-center text-gray-900 rounded-lg border bg-[#EDEDED] border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <div class="h-full p-6 rounded-lg  flex flex-col relative overflow-hidden text-[#686767]">
               <h2 class="tracking-widest title-font mb-4 font-medium text-black text-left text-xl">
                 Professional Plan

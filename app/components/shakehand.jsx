@@ -3,10 +3,10 @@ import Image from "next/image";
 import handshake from "../images/handshaking.png";
 const Shakehand = () => {
   return (
-    <section class="text-gray-600 body-font max-w-custom mx-auto my-48">
-      <div className="container mx-auto flex flex-col md:flex-row items-center px-5 py-12 gap-6 max-w-customm m-auto ">
+    <section class="text-gray-600 body-font w-full mx-auto my-48">
+      <div className="container mx-auto flex flex-col md:flex-row items-center px-6 py-0 sm:py-12 sm:gap-6 max-w-customm m-auto ">
         {/* Text Section */}
-        <div className="w-[60%] ">
+        <div className="lg:w-[60%] md:w-[50%] sm:[80%]">
           <div className="w-32 mb-4 flex items-center justify-center border border-gray-300 rounded-xl py-1 space-x-2">
             {/* Icon */}
             <svg
@@ -44,12 +44,12 @@ const Shakehand = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-[40%] ">
+        <div className="lg:w-[40%] md:w-[50%] sm:[80%] mt-20 md:mt-0">
           <Image
             className="object-cover object-center rounded"
             alt="hero"
             src={handshake}
-            width={600}
+            width={700}
             height={700}
           />
         </div>

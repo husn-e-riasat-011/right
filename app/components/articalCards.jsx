@@ -22,10 +22,10 @@ const ArticalCards = () => {
             </div>
           </div>
 
-          <h2 className=" text-[#000000]  m-auto text-5xl font-bold leading-9 tracking-wide text-center my-6">
+          <h2 className=" text-[#000000]  m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6">
             Everything You Are Looking For
           </h2>
-          <p className=" text-[#535353] mt-4 w-[70%] m-auto text-2xl font-normal leading-8 tracking-wide text-center">
+          <p className=" text-[#535353] mt-4 md:w-[80%] lg:w-[70%] w-[95%]  m-auto text-xl sm:text-2xl font-normal leading-8 tracking-wide text-center">
             Explore features that boost your productivity. From document
             automation to advanced research, we have got the hard work covered.
           </p>
