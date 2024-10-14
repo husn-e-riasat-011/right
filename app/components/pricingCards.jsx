@@ -39,16 +39,16 @@ const PricingCards = () => {
                 Pricing
               </span>
             </div>
-            <h1 class=" text-5xl font-semibold title-font mb-2 text-opacity-80 leading-tight tracking-wide text-[#FFFFFF] font-sans">
+            <h1 class=" lg:text-5xl text-4xl font-semibold title-font mb-2 text-opacity-80 leading-tight tracking-wide text-[#FFFFFF] font-sans">
               Simple and Flexible Pricing
             </h1>
-            <p class="text-xl w-full md:w-[90%] lg:w-[70%] font-normal leading-7 text-[#FFFFFF] text-opacity-80 sm:leading-8 lg:leading-9 tracking-wider">
+            <p class="lg:text-xl text-bold w-full md:w-[90%] lg:w-[70%] font-normal leading-7 text-[#FFFFFF] text-opacity-80 sm:leading-8 lg:leading-9 tracking-wider">
               Choose the plan that fits your legal needs and budget. Get started
               with flexible options designed for individuals, professionals, and
               businesses.
             </p>
           </div>
-          <div class="flex border-2 rounded border-[#6B6B6D] w-[420px] h-16 bg-[#2F2F31] group">
+          <div class="flex border-2 rounded border-[#6B6B6D] md:w-[400px] lg:w-[450px] w-[250px]  h-14 md:h-16 bg-[#2F2F31] group">
             <button class="py-1 px-4 bg-white text-gray-500 w-1/2 rounded-md font-sans text-2xl font-medium leading-7 focus:outline-none group-focus-within:bg-[#2F2F31] group-focus-within:text-white">
               Monthly
             </button>
@@ -59,7 +59,7 @@ const PricingCards = () => {
         </div>
 
         {/* pricing Cards */}
-        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 flex flex-col items-center">
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg xl:p-8 dark:bg-gray-800 dark:text-white">
             <div class="h-full p-6 rounded-lg border-2 border-[#5E5E5E] flex flex-col relative overflow-hidden text-[#A3A1A1] bg-[#2F2F31]">
               <h2 class=" tracking-widest title-font font-medium text-left text-xl mb-4">

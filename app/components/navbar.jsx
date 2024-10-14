@@ -9,9 +9,12 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu
 
   return (
-    <nav className="dark:bg-gray-900 fixed w-full top-0 start-0 z-40">
-      <div className="flex flex-wrap items-center justify-between p-5 rounded-md max-w-customm bg-black text-white m-auto">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+    <nav className=" fixed w-full top-0 start-0 z-40">
+      <div className="flex flex-wrap items-center justify-between xl:p-5 p-3 rounded-md max-w-customm bg-black text-white m-auto">
+        <a
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse xl:w-48 w-40 "
+        >
           <Image
             src={logo}
             width={200}
@@ -22,7 +25,7 @@ const Navbar = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
-            className="text-black bg-white hover:bg-[#2f2f31] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg  px-4 py-2 text-center  transition duration-300 font-sans text-lg  leading-6 tracking-wide mr-2"
+            className="text-black bg-white hover:bg-[#2f2f31] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg  px-4 py-2 text-center  transition duration-300 font-sans xl:text-lg  leading-6 tracking-wide mr-2 text-base"
             onClick={() => {
               router.push("/");
             }}
@@ -31,7 +34,7 @@ const Navbar = () => {
           </button>
           <button
             type="button"
-            className="text-white bg-[#2f2f31] hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  px-4 py-2 text-center transition duration-300 font-sans text-lg font-medium leading-6 tracking-wide ml-2 "
+            className="text-white bg-[#2f2f31] hover:bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  px-4 py-2 text-center transition duration-300 font-sans xl:text-lg text-base font-medium leading-6 tracking-wide ml-2 "
             onClick={() => {
               router.push("/pages/signup");
             }}
@@ -69,7 +72,7 @@ const Navbar = () => {
           } items-center justify-between w-full md:flex md:w-auto md:order-1 bg-black text-white`} // Added "mt-6" to give margin-top when the menu is open
           id="navbar-sticky"
         >
-          <nav className="md:ml-auto flex flex-wrap items-center justify-center ml-5 font-sans text-base font-bold leading-6 tracking-wide ">
+          <nav className="md:ml-auto flex flex-wrap items-center justify-center ml-5 font-sans text-base xl:font-bold font-medium leading-6 tracking-wide ">
             <a
               className="mx-6 hover:text-[#55F4EA] cursor-pointer"
               href="/pages/Home"

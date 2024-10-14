@@ -439,7 +439,7 @@ const Page = () => {
       {/* betterway section */}
       <Betterway />
       {/* client section */}
-      <div className="bg-white max-w-custom m-auto py-18">
+      <div className="bg-white max-w-customm m-auto py-18">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className=" flex items-center justify-center">
@@ -458,15 +458,15 @@ const Page = () => {
                 <span class="text-gray-600">Clients</span>
               </div>
             </div>
-            <h2 className="text-center font-bold mt-3 text-gray-900  font-sans text-5xl w-[90%] m-auto leading-tight tracking-wide">
+            <h2 className="text-center font-bold mt-3 text-gray-900  font-sans sm:text-5xl text-4xl w-full m-auto leading-tight tracking-wide">
               See What are Clients are Saying
             </h2>
-            <p className="text-center font-sans text-2xl tracking-wide text-[#535353] w-[94%] m-auto font-normal leading-8 mt-6">
+            <p className="text-center font-sans sm:text-2xl text-lg tracking-wide text-[#535353] w-full m-auto font-normal leading-8 mt-6">
               Here what some of our clients say about our platform.
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-6 px-6 sm:px-0">
           {/* first card */}
           <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">

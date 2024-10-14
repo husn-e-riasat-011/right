@@ -3,7 +3,7 @@ import Image from "next/image";
 import video from "../images/video.png";
 const Videocomponent = () => {
   return (
-    <section class="text-gray-600 max-w-custom m-auto body-font ">
+    <section class="text-gray-600 w-full m-auto body-font ">
       <div class="container mx-auto flex px-5 py-24 max-w-customm items-center justify-center flex-col">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
           <div className=" flex items-center justify-center">
@@ -26,10 +26,10 @@ const Videocomponent = () => {
               <span class="text-gray-600 leading-6 tracking-widest">Video</span>
             </div>
           </div>
-          <h2 className="text-center font-bold mt-3 text-gray-900 font-sans text-5xl w-[90%] m-auto leading-tight tracking-wide">
+          <h2 className="text-center font-bold mt-3 text-gray-900 font-sans  text-4xl md:text-5xl w-full md:w-[90%] m-auto leading-tight tracking-wide">
             Discover How We Simplify Legal Processes
           </h2>
-          <p className="text-center font-sans text-2xl tracking-wide text-[#535353] w-[94%] m-auto font-normal leading-8 mt-6">
+          <p className="text-center font-sans md:text-2xl text-xl tracking-wide text-[#535353] md:w-[94%] m-auto font-normal leading-8 mt-6">
             Watch this quick overview to learn how our AI-powered tools
             transform the way you handle legal tasks. From instant legal advice
             to automated document drafting, see how we make complex legal work
@@ -38,7 +38,7 @@ const Videocomponent = () => {
         </div>
         <a
           href="https://infoportfolio.netlify.app/"
-          className=" mb-10 object-cover object-center rounded mt-8 cursor-pointer"
+          className=" mb-10 object-cover object-center rounded mt-8 cursor-pointer sm:w-[500px] w-[98%] lg:w-full m-auto lg:flex lg:justify-center"
         >
           <Image alt="video" src={video} width={900} height={900} />
         </a>
