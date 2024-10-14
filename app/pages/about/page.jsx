@@ -27,7 +27,7 @@ const Page = () => {
       <section class="text-gray-600 body-font w-full m-auto">
         <div class="max-w-customm  py-24 mx-auto ">
           <div class="flex lg:flex-nowrap flex-wrap w-full justify-center items-center">
-            <div class="lg:w-[600px] mb-10 md:mb-0">
+            <div class="md:w-[600px] sm:w-[500px] w-full mb-10 md:mb-0">
               <Image
                 class="object-cover object-center rounded"
                 alt="hero"

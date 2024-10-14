@@ -9,16 +9,14 @@ const Page = () => {
     <div>
       <Navbar />
       {/* secon navbar */}
-      <nav className="bg-[#F9F9F9] text-black py-4 px-6 mt-20 w-[94%] m-auto rounded-sm">
+      <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">
           <Link href={"/"} className="font-bold">
             Home
           </Link>
           <span className="border-l border-black h-6"></span>{" "}
           {/* Line between links */}
-          <a href="#about" className="text-gray-400">
-            Contactus
-          </a>
+          <span className="text-gray-400">Contact</span>
         </div>
       </nav>
       <div className="flex justify-center w-[94%] m-auto my-40">

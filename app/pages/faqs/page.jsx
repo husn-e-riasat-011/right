@@ -9,24 +9,24 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-      <nav className="bg-[#F9F9F9] text-black py-4 px-6 my-20 w-[94%] m-auto rounded-sm">
+      <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">
           <Link href={"/"} className="font-bold">
             Home
           </Link>
           <span className="border-l border-black h-6"></span>{" "}
           {/* Line between links */}
-          <p className="text-gray-400">FAQs</p>
+          <span className="text-gray-400">FAQS</span>
         </div>
       </nav>
 
       <section>
         <div className="py-20 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl w-[50%] m-auto">
+            <h2 className="text-[#000000]  m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6">
               All Your Questions Have Answers Here
             </h2>
-            <p className="text-center text-lg font-medium leading-8 text-gray-900 mt-4 w-[60%] m-auto">
+            <p className="text-[#535353] mt-4 md:w-[80%] lg:w-[70%] w-[95%]  m-auto text-xl sm:text-2xl font-normal leading-8 tracking-wide text-center">
               Explore our most commonly asked questions to learn more about how
               our AI-powered legal platform works, its benefits, and how it can
               help you manage your legal needs with greater efficiency and

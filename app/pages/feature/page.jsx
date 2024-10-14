@@ -13,25 +13,31 @@ const Page = () => {
   return (
     <div>
       <Navbar />
-      <nav className="bg-[#F9F9F9] text-black py-4 px-6 mt-20 w-[94%] m-auto rounded-sm">
+      <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">
           <Link href={"/"} className="font-bold">
             Home
           </Link>
           <span className="border-l border-black h-6"></span>{" "}
           {/* Line between links */}
-          <span className="text-gray-400">Features</span>
+          <span className="text-gray-400">Feature</span>
         </div>
       </nav>
       <ArticalCards />
-      <section class="text-white body-font overflow-hidden bg-gradient-to-b from-black to-gray-800 w-[94%] m-auto rounded-2xl">
-        <div class="px-5 py-24 mx-auto w-[90%]">
+      <section
+        className="w-full rounded-b-2xl "
+        style={{
+          background:
+            "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+        }}
+      >
+        <div className=" font-sans max-w-customm m-auto flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl mb-3">
           <div class="flex wrp justify-center items-center">
-            <div class="p-4">
-              <h1 class="font-medium mt-2 text-3xl text-white">
+            <div class="p-4  ">
+              <h1 class="font-medium mt-2 text-4xl tracking-widest text-white">
                 Revolutionize Your Legal Experience
               </h1>
-              <p class="w-full mt-4">
+              <p class="w-full mt-4 text-xl tracking-wide">
                 Our platform transforms the way you approach legal tasks,
                 offering instant advice, automated document creation, and
                 comprehensive legal research—all at your fingertips. Say goodbye
@@ -42,7 +48,7 @@ const Page = () => {
                 support you need, whenever you need it.
               </p>
             </div>
-            <div class="flex gap-4 justify-center w-full md:w-1/2  md:mt-4 p-2 ">
+            <div class="flex gap-4 justify-center w-full md:w-2/3  md:mt-4 p-2 ">
               <div>
                 <div class="w-70 p-5 mb-2 flex flex-col shadow-custom rounded-md bg-[#2F2F31]">
                   <Image
@@ -104,13 +110,13 @@ const Page = () => {
         </div>
       </section>
       {/* Benefits */}
-      <div className="bg-white py-18">
+      <div className="bg-white py-20">
         <div className="bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 className="text-center font-bold leading-8 text-gray-900 text-2xl w-[50%] m-auto">
+            <h2 className="   w-[100%]  text-[#000000]  m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6">
               Benefits of Using Our AI-Powered Legal Platform
             </h2>
-            <p className="text-center text-lg font-medium leading-8 text-gray-900 mt-4 w-[60%] m-auto">
+            <p className="  text-[#535353] mt-4 md:w-[80%] lg:w-[84%] w-[95%]  m-auto text-xl sm:text-2xl font-normal leading-8 tracking-wide text-center">
               Experience the future of legal services with our AI-powered
               platform. Designed to save you time, reduce costs, and improve
               accuracy, our solutions empower you to handle legal tasks with
@@ -118,9 +124,9 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-6 max-w-customm m-auto">
           {/* first card */}
-          <div class="max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="pic" />
             </a>
@@ -137,7 +143,7 @@ const Page = () => {
             </div>
           </div>
           {/* second one */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="nothing" />
             </a>
@@ -146,14 +152,15 @@ const Page = () => {
                 Increase Accuracy & Compliance
               </h5>
               <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                With AI-driven insights and document drafting, you can trust
-                that your legal work is precise and compliant with the latest
-                regulations.
+                Work seamlessly with your team or clients. Our platform’s
+                collaboration tools allow for easy sharing of documents,
+                real-time updates, and efficient communication, ensuring
+                everyone stays on same.
               </p>
             </div>
           </div>
           {/* third one */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="" />
             </a>
@@ -170,7 +177,7 @@ const Page = () => {
             </div>
           </div>
           {/* forth */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="" />
             </a>
@@ -187,7 +194,7 @@ const Page = () => {
             </div>
           </div>
           {/* fiveth */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="" />
             </a>
@@ -200,12 +207,12 @@ const Page = () => {
                 Work seamlessly with your team or clients. Our platform’s
                 collaboration tools allow for easy sharing of documents,
                 real-time updates, and efficient communication, ensuring
-                everyone stays on the same page.
+                everyone stays on same.
               </p>
             </div>
           </div>
           {/* 6th */}
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
+          <div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center">
             <a href="#" className="mt-10">
               <Image src={imageone} alt="" />
             </a>
