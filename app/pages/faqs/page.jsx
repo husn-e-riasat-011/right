@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </nav>
 
-      <section>
+      <section className="max-w-customm m-auto">
         <div className="py-20 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-[#000000]  m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6">
@@ -34,7 +34,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div class=" w-[85%] m-auto bg-white flex flex-wrap justify-center items-center ">
+        <div class=" w-[85%] m-auto  flex flex-wrap justify-center items-center ">
           <div class="mx-auto w-[700px] marg">
             <div class="mx-auto grid max-w-xl divide-neutral-200">
               <div class="py-3">
@@ -356,7 +356,7 @@ const Page = () => {
       </section>
 
       {/* last sectrion */}
-      <section className="my-36">
+      <section className="my-36 max-w-customm m-auto">
         <div class=" w-[85%] m-auto bg-white flex flex-wrap justify-center items-center ">
           <div class="mx-auto w-[700px] marg">
             <Image

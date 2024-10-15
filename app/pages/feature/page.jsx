@@ -31,13 +31,13 @@ const Page = () => {
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
         }}
       >
-        <div className=" font-sans max-w-customm m-auto flex flex-col items-center justify-center text-white relative pt-40 rounded-b-2xl mb-3">
+        <div className=" font-sans max-w-customm m-auto flex flex-col items-center justify-center text-white relative py-32 rounded-b-2xl mb-3">
           <div class="flex wrp justify-center items-center">
             <div class="p-4  ">
-              <h1 class="font-medium mt-2 text-4xl tracking-widest text-white">
+              <h1 class="font-medium mt-2 md:text-5xl text-3xl tracking-wider text-white">
                 Revolutionize Your Legal Experience
               </h1>
-              <p class="w-full mt-4 text-xl tracking-wide">
+              <p class="w-full mt-4 md:text-2xl text-xl tracking-wideer">
                 Our platform transforms the way you approach legal tasks,
                 offering instant advice, automated document creation, and
                 comprehensive legal research—all at your fingertips. Say goodbye
@@ -48,16 +48,18 @@ const Page = () => {
                 support you need, whenever you need it.
               </p>
             </div>
-            <div class="flex gap-4 justify-center w-full md:w-2/3  md:mt-4 p-2 ">
+            <div class="flex gap-10 justify-center w-full md:w-2/3  md:mt-4 px-6 ">
               <div>
-                <div class="w-70 p-5 mb-2 flex flex-col shadow-custom rounded-md bg-[#2F2F31]">
+                <div class="w-60 p-5 mb-10 flex flex-col shadow-custom rounded-md bg-[#2F2F31]">
                   <Image
                     src={imageone}
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                     alt="Picture of the author"
                   />
-                  <h1 class="font-bold mt-2">AI Legal Consultation</h1>
+                  <h1 class="font-bold my-2 tracking-wide">
+                    AI Legal Consultation
+                  </h1>
                   <p className="text-[#CECECE]">
                     Receive expert legal advice instantly. Our AI-powered
                     consultation service analyzes your query.
@@ -66,11 +68,11 @@ const Page = () => {
                 <div class="w-60 p-5 mb-2 flex flex-col  shadow-custom rounded-md bg-[#2F2F31]">
                   <Image
                     src={imageone}
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                     alt="Picture of the author"
                   />
-                  <h1 class="font-bold mt-2">Legal Research</h1>
+                  <h1 class="font-bold my-2 tracking-wide">Legal Research</h1>
                   <p className="text-[#CECECE]">
                     Empower your decisions with thorough legal research. Our AI
                     scours a vast database of legal precedents,
@@ -78,14 +80,16 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <div class="w-60 p-5 mb-2 flex flex-col shadow-custom rounded-md bg-[#2F2F31] mt-4 md:mt-8">
+                <div class="w-60 p-5 my-10 flex flex-col shadow-custom rounded-md bg-[#2F2F31] mt-4 md:mt-8">
                   <Image
                     src={imageone}
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                     alt="Picture of the author"
                   />
-                  <h1 class="font-bold mt-2">Automated Drafting</h1>
+                  <h1 class="font-bold my-2 tracking-wide">
+                    Automated Drafting
+                  </h1>
                   <p className="text-[#CECECE]">
                     Draft legal documents with ease. Our AI generates accurate
                     contracts, agreements, and more,
@@ -94,11 +98,13 @@ const Page = () => {
                 <div class="w-60 p-5 mb-2 flex flex-col  shadow-custom rounded-md bg-[#2F2F31] ">
                   <Image
                     src={imageone}
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                     alt="Picture of the author"
                   />
-                  <h1 class="font-bold mt-2">Contract Management</h1>
+                  <h1 class="font-bold my-2 tracking-wide">
+                    Contract Management
+                  </h1>
                   <p className="text-[#CECECE]">
                     Streamline your contract lifecycle. Our platform allows you
                     to store, track, and manage all your contracts
