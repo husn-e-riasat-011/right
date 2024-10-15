@@ -22,7 +22,7 @@ import Tsecond from "../../images/t-51.png";
 import left from "../../images/left.png";
 import right from "../../images/right.png";
 import uperrow from "../../images/uppp.png";
-
+import { motion } from "framer-motion";
 const Page = () => {
   return (
     <div>

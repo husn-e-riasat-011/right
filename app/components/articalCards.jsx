@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import eleven from "../images/111.png";
@@ -5,33 +6,69 @@ import Twelve from "../images/222.png";
 import Thirteen from "../images/333.png";
 import Sixteen from "../images/Sixteen.png";
 import featureicon from "../images/ii.png";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 // import { FaPersonBiking, FaPersonBurst } from "react-icons/fa6";
 const ArticalCards = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, threshold: 0.2 });
+  const inputanimation = {
+    hidden: {
+      opacity: 0,
+      y: 100,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.3,
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div className="bg-white max-w-custom m-auto py-48">
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="flex items-center justify-center my-4">
+      <div className="bg-white py-24 sm:py-32" ref={ref}>
+        <motion.div
+          initial="hidden"
+          animate={isInView ? "show" : "hidden"} // Trigger animation based on visibility
+          variants={inputanimation}
+          className="mx-auto max-w-7xl px-6 lg:px-8"
+        >
+          <motion.div
+            variants={inputanimation}
+            className="flex items-center justify-center my-4"
+          >
             <div className="w-36 flex items-center justify-center border border-gray-300 rounded-xl py-2 px-2 space-x-2">
               {/* <!-- Icon --> */}
               <Image src={featureicon} alt="icon" />
               {/* <!-- Text --> */}
-              <span class="text-[#535353]  text-lg font-normal leading-6 tracking-widest">
+              <span className="text-[#535353] text-lg font-normal leading-6 tracking-widest">
                 Features
               </span>
             </div>
-          </div>
+          </motion.div>
 
-          <h2 className=" text-[#000000]  m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6">
+          <motion.h2
+            variants={inputanimation}
+            className="text-[#000000] m-auto md:text-5xl text-4xl font-bold leading-10 tracking-wide text-center my-6"
+          >
             Everything You Are Looking For
-          </h2>
-          <p className=" text-[#535353] mt-4 md:w-[80%] lg:w-[70%] w-[95%]  m-auto text-xl sm:text-2xl font-normal leading-8 tracking-wide text-center">
+          </motion.h2>
+          <motion.p
+            variants={inputanimation}
+            className="text-[#535353] mt-4 md:w-[80%] lg:w-[70%] w-[95%] m-auto text-xl sm:text-2xl font-normal leading-8 tracking-wide text-center"
+          >
             Explore features that boost your productivity. From document
             automation to advanced research, we have got the hard work covered.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-10">
+      <div
+        className="flex flex-wrap justify-center items-center gap-10"
+        ref={ref}
+      >
         {/* first card */}
         <div class="w-[470px] bg-white">
           <div className="border border-[#ACACAC] rounded-2xl">
