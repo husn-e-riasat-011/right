@@ -25,9 +25,9 @@ const Sideherosection = () => {
         reliable. Simplify your legal processes with our innovative solutions
         and expert support.
       </p>
-      <h2 className="sm:text-3xl text-3xl  font-semibold text-gray-900 mt-4 mb-4">
-        If you don&#39;t have an account <br /> you can{" "}
-        {/* Escaped the single quote */}
+      <h2 className="sm:text-3xl text-2xl  font-semibold text-gray-900 mt-4 mb-4">
+        If you don&#39;t have an account <br className="sm:block hidden" /> you
+        can {/* Escaped the single quote */}
         <span className="text-blue-600">Register here!</span>
       </h2>
       <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">

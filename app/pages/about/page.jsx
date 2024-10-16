@@ -8,9 +8,11 @@ import Shakehand from "@/app/components/shakehand";
 import icon from "../../images/icon3.png";
 import righticon from "../../images/right.png";
 import Footer from "@/app/components/footer";
+import jon from "../../images/t-51.png";
+import registergirl from "../../images/t-21.png";
 const Page = () => {
   return (
-    <div>
+    <div className="sm:px-5 px-2">
       <Navbar />
       <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">
@@ -71,7 +73,7 @@ const Page = () => {
       </section>
       {/*how to work */}
       <div
-        className="w-full"
+        className="w-full rounded-2xl"
         style={{
           background:
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
@@ -240,9 +242,9 @@ const Page = () => {
         </div>
       </div>
       {/* four card section */}
-      <div class="flex flex-wrap justify-center gap-6 px-10 py-48 max-w-customm m-auto">
+      <div class="flex flex-wrap-reverse justify-center gap-6  py-48 max-w-customm m-auto">
         {/* <!-- Card 1 --> */}
-        <div class="bg-white py-6 px-1  flex flex-col w-full sm:w-80">
+        <div class="bg-white py-6 px-1  flex flex-col w-full sm:w-[350px] xl:w-[400px]">
           {/* <!-- Button with Man Icon and Click Text --> */}
           <button class="flex items-center py-2 rounded border border-[#535353] hover:bg-[#535353] hover:text-white transition duration-300 w-28 px-4 text-[#535353] mb-2">
             {/* <!-- Man Icon (Using Heroicons SVG) --> */}
@@ -264,11 +266,11 @@ const Page = () => {
             Clients
           </button>
 
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-3xl font-bold">
             See What are Clients are Saying
           </h1>
 
-          <p class="text-gray-600 mt-2  text-left w-full">
+          <p class="text-gray-600 mt-2 text-xl text-left w-full">
             what some of our clients say about our platform.
           </p>
           <div className="flex justify-start items-center mt-3 space-x-4">
@@ -311,18 +313,24 @@ const Page = () => {
         </div>
 
         {/* <!-- Card 2 --> */}
-        <div class="bg-gradient-to-b from-[#F6F6F6] to-[#487CD9] rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-80">
+        <div
+          class=" rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-[350px] border border-[#9F9F9F]"
+          style={{
+            background:
+              "linear-gradient(20.85deg, rgba(72, 124, 217, 0.7) 1.41%, #F7F7F7 100%)",
+          }}
+        >
           {/* <!-- Image --> */}
-          <div class="mb-4 flex justify-center items-center">
+          <div class="mb-4 flex ml-4 items-center">
             <Image
               class=" rounded-full object-cover"
-              src={happygirl}
+              src={registergirl}
               width={60}
               height={60}
               alt="User Image"
             />
             <div className="flex justify-center flex-col">
-              <h1 className="font-medium leading-3 text-[#313131]  mb-1 ml-2 text-left">
+              <h1 className="font-bold tracking-wide leading-4 text-[#313131]  mb-1 ml-2 text-left">
                 Sarah M
               </h1>
               <p className="text-[#000000] leading-3 font-normal ml-2 text-left mt-1 ">
@@ -331,34 +339,40 @@ const Page = () => {
             </div>
           </div>
 
-          <p class="text-[#313131] mt-2  text-left w-full">
+          <p class="text-[#313131] mt-2 tracking-wider text-left w-full">
             “The AI lawyer helped me draft a contract in minutes, saving me
             hours of work. I can not believe how easy it was to use. Highly
             recommend it to any small business owner!”
           </p>
           {/* <!-- Rating Stars --> */}
-          <div class="flex justify-left mt-4 items-start">
+          <div class="flex justify-left text-3xl mt-4 items-start">
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
-            <span class="ml-2 mt-1 text-gray-600 text-sm">4.8</span>
+            <span class="ml-2 text-[#000000] ">4.8</span>
           </div>
         </div>
         {/* <!-- Card 3 --> */}
-        <div class="bg-gradient-to-b from-[#F6F6F6] to-[#487CD9] rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-80">
+        <div
+          class=" rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-[350px] border border-[#9F9F9F]"
+          style={{
+            background:
+              "linear-gradient(20.85deg, rgba(72, 124, 217, 0.7) 1.41%, #F7F7F7 100%)",
+          }}
+        >
           {/* <!-- Image --> */}
-          <div class="mb-4 flex justify-center items-center">
+          <div class="mb-4 flex ml-4 items-center">
             <Image
               class=" rounded-full object-cover"
-              src={happygirl}
+              src={jon}
               width={60}
               height={60}
               alt="User Image"
             />
             <div className="flex justify-center flex-col">
-              <h1 className="font-medium leading-3 text-[#313131]  mb-1 ml-2 text-left">
+              <h1 className="font-bold tracking-wide leading-4 text-[#313131]  mb-1 ml-2 text-left">
                 John
               </h1>
               <p className="text-[#000000] leading-3 font-normal ml-2 text-left mt-1 ">
@@ -367,26 +381,32 @@ const Page = () => {
             </div>
           </div>
 
-          <p class="text-[#313131] mt-2  text-left w-full">
+          <p class="text-[#313131] mt-2 tracking-wider text-left w-full">
             “I was skeptical at first, but the AI provided spot-on legal advice
             for my case. It was like having a lawyer on call 24/7. The best
             part? It is way more affordable than traditional.”
           </p>
           {/* <!-- Rating Stars --> */}
-          <div class="flex justify-left mt-4 items-start">
+          <div class="flex justify-left text-3xl mt-4 items-start">
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
-            <span class="ml-2 mt-1 text-gray-600 text-sm">4.8</span>
+            <span class="ml-2 text-[#000000]">4.8</span>
           </div>
         </div>
 
         {/* <!-- Card 4 --> */}
-        <div class="bg-gradient-to-b from-[#F6F6F6] to-[#487CD9] rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-80">
+        <div
+          class="rounded-lg py-6 px-2 text-center flex flex-col w-full sm:w-[350px] border border-[#9F9F9F]"
+          style={{
+            background:
+              "linear-gradient(20.85deg, rgba(72, 124, 217, 0.7) 1.41%, #F7F7F7 100%)",
+          }}
+        >
           {/* <!-- Image --> */}
-          <div class="mb-4 flex justify-center items-center">
+          <div class="mb-4 flex ml-4 items-center">
             <Image
               class=" rounded-full object-cover"
               src={happygirl}
@@ -395,7 +415,7 @@ const Page = () => {
               alt="User Image"
             />
             <div className="flex justify-center flex-col">
-              <h1 className="font-medium leading-3 text-[#313131]  mb-1 ml-2 text-left">
+              <h1 className="font-bold tracking-wide leading-4 text-[#313131]  mb-1 ml-2 text-left">
                 Emily
               </h1>
               <p className="text-[#000000] leading-3 font-normal ml-2 text-left mt-1 ">
@@ -404,19 +424,19 @@ const Page = () => {
             </div>
           </div>
 
-          <p class="text-[#313131] mt-2  text-left w-full">
+          <p class="text-[#313131] mt-2 tracking-wider text-left w-full">
             “The AI lawyer helped me draft a contract in minutes, saving me
             hours of work. I can not believe how easy it was to use. Highly
             recommend it to any small business owner!”
           </p>
           {/* <!-- Rating Stars --> */}
-          <div class="flex justify-left mt-4 items-start">
+          <div class="flex justify-left text-3xl mt-4 items-start">
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
             <span class="text-yellow-500">&#9733;</span>
-            <span class="ml-2 mt-1 text-gray-600 text-sm">4.8</span>
+            <span class="ml-2 text-[#000000]">4.8</span>
           </div>
         </div>
       </div>

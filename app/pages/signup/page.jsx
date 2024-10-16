@@ -13,15 +13,21 @@ const Page = () => {
       <section class="text-gray-600 body-font overflow-hidden  w-full m-auto">
         <div class="flex flex-wrap-reverse justify-center items-center  py-24 my-24 mx-auto max-w-customm">
           <Sideherosection />
-          <div className="p-12 lg:w-1/2 flex flex-col items-center w-full justify-center">
-            <div className="w-full bg-black text-white rounded-lg shadow dark:border md:mt-0 md:max-w-lg m-auto py-10">
+          <div className="sm:p-12 p-6 lg:w-1/2 flex flex-col items-center w-full justify-center">
+            <div
+              className="w-full text-white rounded-lg shadow dark:border md:mt-0 md:max-w-lg m-auto py-10"
+              style={{
+                background:
+                  "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+              }}
+            >
               <a
                 href="/"
                 className="flex items-center space-x-3 rtl:space-x-reverse justify-center"
               >
                 <Image src={logo} width={150} height={130} alt="Logo" />
               </a>
-              <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <div className="p-4 space-y-4 md:space-y-6 sm:p-8">
                 <p className="text-center tracking-wider">Register Here</p>
                 <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl dark:text-white text-center text-white">
                   Register to <span className="text-blue-600">UndrRight</span>
@@ -171,7 +177,7 @@ const Page = () => {
                       Already have an account?{" "}
                       <a
                         href="/"
-                        className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                        className="font-medium  hover:underline dark:text-primary-500 text-[#55F4EA]"
                       >
                         Login
                       </a>

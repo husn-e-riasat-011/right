@@ -11,7 +11,7 @@ import Betterway from "@/app/components/betterway";
 
 const Page = () => {
   return (
-    <div>
+    <div className="sm:px-5 px-2">
       <Navbar />
       <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
         <div className="flex items-center space-x-4">

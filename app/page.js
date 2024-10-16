@@ -12,8 +12,14 @@ export default function Home() {
       <section class="text-gray-600 body-font overflow-hidden  w-full m-auto">
         <div class="flex flex-wrap-reverse justify-center items-center  py-24 my-24 mx-auto max-w-customm">
           <Sideherosection />
-          <div class="p-12 lg:w-1/2 flex flex-col items-center w-full justify-center">
-            <div class="w-full bg-black text-white rounded-lg shadow dark:border md:mt-0 md:max-w-lg m-auto py-10">
+          <div class="sm:p-12 p-6 lg:w-1/2 flex flex-col items-center w-full justify-center">
+            <div
+              class="w-full text-white rounded-lg shadow dark:border md:mt-0 md:max-w-lg m-auto py-10"
+              style={{
+                background:
+                  "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
+              }}
+            >
               <a
                 href="/"
                 class="flex items-center space-x-3 rtl:space-x-reverse justify-center"
@@ -25,7 +31,7 @@ export default function Home() {
                   alt="Picture of the author"
                 />
               </a>
-              <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <div class="p-4 space-y-4 md:space-y-6 sm:p-8">
                 <p className="text-center tracking-wider">Login here</p>
                 <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl dark:text-white text-center text-white">
                   Welcome to <span className="text-[#55F4EA]">UndrRight</span>
@@ -74,10 +80,10 @@ export default function Home() {
                           required=""
                         />
                       </div>
-                      <div class="ml-3 text-sm">
+                      <div class="ml-2 text-sm">
                         <label
                           for="remember"
-                          class="dark:text-gray-300 text-white"
+                          class="dark:text-gray-300 text-white tracking-tight sm:tracking-wide "
                         >
                           Remember me
                         </label>
@@ -85,7 +91,7 @@ export default function Home() {
                     </div>
                     <a
                       href="/pages/forgotpassword"
-                      class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500 tracking-tight sm:tracking-wide"
                     >
                       Forgot password?
                     </a>
@@ -99,13 +105,13 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <p class="text-center font-light  dark:text-gray-400 text-white">
+                  <p class="text-center font-light  text-white">
                     Don’t have an account yet?{" "}
                     <Link
                       href={"/pages/signup"}
                       class="font-medium text-primary-600 hover:underline dark:text-primary-500 text-[#55F4EA]"
                     >
-                      Sign up
+                      Sign_up
                     </Link>
                   </p>
                 </form>

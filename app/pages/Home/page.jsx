@@ -22,15 +22,15 @@ import Tsecond from "../../images/t-51.png";
 import left from "../../images/left.png";
 import right from "../../images/right.png";
 import uperrow from "../../images/uppp.png";
-import { motion } from "framer-motion";
+
 const Page = () => {
   return (
-    <div>
+    <div className="sm:px-5 px-2">
       <Navbar />
       {/* Hero section */}
 
       <div
-        className="w-full rounded-b-2xl "
+        className="w-full rounded-b-2xl"
         style={{
           background:
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",
@@ -232,7 +232,7 @@ const Page = () => {
       <ArticalCards />
       {/* how it work */}
       <div
-        className="w-full"
+        className="w-full rounded-2xl"
         style={{
           background:
             "radial-gradient(100% 100% at 52.08% 100%, #363636 0%, #141414 43.58%, #050505 100%)",

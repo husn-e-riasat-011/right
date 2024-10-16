@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage mobile menu
 
   return (
-    <nav className=" fixed w-full top-0 start-0 z-40">
+    <nav className=" fixed w-full top-0 start-0 z-40 sm:px-6 px-2">
       <div className="flex flex-wrap items-center justify-between xl:p-5 p-3 rounded-md max-w-customm bg-black text-white m-auto">
         <a
           href="/"

@@ -6,7 +6,7 @@ import contactimage from "../../images/contact-us-image.png";
 import Footer from "@/app/components/footer";
 const Page = () => {
   return (
-    <div>
+    <div className="sm:px-5 px-2">
       <Navbar />
       {/* secon navbar */}
       <nav className="bg-[#F9F9F9] text-black py-6 px-6 mt-32 max-w-customm m-auto rounded-sm">
