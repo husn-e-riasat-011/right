@@ -27,7 +27,7 @@ const Navbar = () => {
             type="button"
             className="text-black bg-white hover:bg-[#2f2f31] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg  px-4 py-2 text-center  transition duration-300 font-sans xl:text-lg  leading-6 tracking-wide mr-2 text-base"
             onClick={() => {
-              router.push("/");
+              router.push("/pages/dashbord");
             }}
           >
             Log In
