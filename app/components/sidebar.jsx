@@ -12,10 +12,10 @@ const Sidebar = () => {
     firstLiRef.current.focus();
   }
   return (
-    <aside className="w-[159px] h-screen border border-[#DDDDDD] flex flex-col justify-between max-h-[1700px]">
+    <aside className="w-[150px] h-screen border border-[#DDDDDD] flex flex-col justify-between max-h-[1700px]">
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex justify-center items-center text-white">
-        <Link href="#">
+        <Link href="/">
           <Image width={54} height={63} src={ulogo} alt="Logo" />
         </Link>
       </div>
