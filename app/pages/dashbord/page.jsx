@@ -1,14 +1,14 @@
-import Sidebar from "@/app/components/sidebar";
+import Sidebar from "@/app/pages/dashbord/component/sidebar";
 import React from "react";
 import file from "../../images/file2.png";
 import Image from "next/image";
+import DashboardLayout from "./Layout";
 
 const Page = () => {
   return (
     <div className="flex">
-      <Sidebar />
-
-      <div class="flex flex-col  w-[100%] h-screen overflow-scroll">
+      <DashboardLayout />
+      <div class="flex flex-col  w-[100%] h-screen overflow-y-scroll">
         {/* first section  */}
         <div
           className="mx-28 my-20 p-12 border border-[#B8B8B8] rounded-3xl"

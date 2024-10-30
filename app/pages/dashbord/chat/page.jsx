@@ -1,11 +1,12 @@
-import Sidebar from "@/app/components/sidebar";
+import Sidebar from "@/app/pages/dashbord/component/sidebar";
 import React from "react";
+import DashboardLayout from "../Layout";
 
 const Page = () => {
   return (
     <div className="flex">
-      <Sidebar />
-      <div className="w-[400px] bg-[#F9F9F9] border-transparent border border-r-[#B8B8B8] h-screen overflow-auto ">
+      <DashboardLayout />
+      <div className="w-[400px] bg-[#F9F9F9] border-transparent border border-r-[#B8B8B8] h-screen  ">
         <div className="p-8 mt-6">
           <h1 className=" text-3xl mt-5 tracking-wider w-full font-bold">
             Chats
