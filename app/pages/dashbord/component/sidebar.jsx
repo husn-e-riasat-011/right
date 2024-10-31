@@ -10,6 +10,7 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setOpen(!open);
   };
+
   const items = [
     {
       id: 0,
@@ -174,7 +175,6 @@ const Sidebar = () => {
           />
         </svg>
       ),
-      href: "#",
     },
     {
       title: "Support & Help",
@@ -193,7 +193,6 @@ const Sidebar = () => {
           />
         </svg>
       ),
-      href: "#",
     },
   ];
 
@@ -243,7 +242,7 @@ const Sidebar = () => {
       </div>
 
       {/* <!-- Sidebar Menu --> */}
-      <div className="flex flex-col overflow-y-auto">
+      <div className="flex flex-col w-full overflow-y-auto">
         <nav className="flex justify-center">
           <ul
             className={`flex flex-col w-full transition-all duration-300 ml-5`}
@@ -267,7 +266,7 @@ const Sidebar = () => {
       <footer className="flex justify-center">
         <ul className={`flex flex-col w-full transition-all duration-300 ml-5`}>
           {footreitems.map((item, index) => (
-            <Link href={item.href} key={index}>
+            <div key={index}>
               <li
                 className="flex items-center cursor-pointer my-4 w-full border-transparent border-4 rounded focus-within:border-r-black focus-within:border-r-4"
                 tabIndex="0"
@@ -277,7 +276,7 @@ const Sidebar = () => {
                   <span className="ml-3 text-2xl mt-1">{item.title}</span>
                 )}
               </li>
-            </Link>
+            </div>
           ))}
         </ul>
       </footer>

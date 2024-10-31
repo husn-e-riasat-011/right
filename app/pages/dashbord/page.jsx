@@ -17,13 +17,13 @@ const Page = () => {
               "linear-gradient(180deg, rgba(85, 244, 234, 0.1) 0%, rgba(49, 142, 136, 0.1) 100%)",
           }}
         >
-          <h1 className="text-black text-center font-bold text-4xl tracking-wider my-8">
+          <h1 className="text-black md:text-center text-left font-semibold text-4xl tracking-wider my-8">
             Welcome back, Alan Sanders!
           </h1>
           <div className="flex flex-wrap justify-center gap-6">
             {/* <!-- Card 1 --> */}
             <div
-              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full sm:w-[300px] h-[240px] "
+              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full max-w-[290px]  "
               style={{
                 background:
                   "linear-gradient(57.36deg, rgba(3, 217, 251, 0.5) 2.49%, rgba(45, 99, 197, 0.5) 96.35%)",
@@ -61,7 +61,7 @@ const Page = () => {
             </div>
             {/* <!-- Card 2 --> */}
             <div
-              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full sm:w-[300px] h-[240px]"
+              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full max-w-[290px] "
               style={{
                 background:
                   "linear-gradient(57.36deg, rgba(3, 217, 251, 0.5) 2.49%, rgba(45, 99, 197, 0.5) 96.35%)",
@@ -99,7 +99,7 @@ const Page = () => {
             </div>
             {/* <!-- Card 3 --> */}
             <div
-              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full sm:w-[300px] h-[240px] "
+              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full  max-w-[290px]  "
               style={{
                 background:
                   "linear-gradient(57.36deg, rgba(3, 217, 251, 0.5) 2.49%, rgba(45, 99, 197, 0.5) 96.35%)",
@@ -137,7 +137,7 @@ const Page = () => {
             </div>
             {/* <!-- Card 4 --> */}
             <div
-              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full sm:w-[300px] h-[240px] "
+              class=" rounded-3xl py-6 px-2 text-center flex flex-col w-full max-w-[290px]  "
               style={{
                 background:
                   "linear-gradient(57.36deg, rgba(3, 217, 251, 0.5) 2.49%, rgba(45, 99, 197, 0.5) 96.35%)",
@@ -186,12 +186,12 @@ const Page = () => {
           style={{ boxShadow: "0px 10px 15px -3px rgba(0, 0, 0, 0.1)" }}
         >
           <div className="max-w-[1260px]">
-            <h1 className=" text-left text-4xl font-bold tracking-wider mt-6 mb-10">
+            <h1 className=" text-left text-4xl font-semibold tracking-wider mt-6 mb-10">
               Recent Uploaded Documents
             </h1>
             <div className="flex flex-wrap justify-center gap-6">
               {/* <!-- Card 1 --> */}
-              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
+              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col  max-w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
                 {/* <!-- Image --> */}
                 <div class="mb-4 flex justify-center items-center">
                   <Image
@@ -213,7 +213,7 @@ const Page = () => {
                 </p>
               </div>
               {/* <!-- Card 2 --> */}
-              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
+              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col  max-w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
                 {/* <!-- Image --> */}
                 <div class="mb-4 flex justify-center items-center">
                   <Image
@@ -235,7 +235,7 @@ const Page = () => {
                 </p>
               </div>
               {/* <!-- Card 3 --> */}
-              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
+              <div class=" rounded-2xl py-6 px-2 text-center flex flex-col  max-w-[400px] bg-[#F1F1F1] border border-[#2C83E9]">
                 {/* <!-- Image --> */}
                 <div class="mb-4 flex justify-center items-center">
                   <Image
@@ -268,13 +268,13 @@ const Page = () => {
           }}
         >
           <div className="max-w-[1260px]">
-            <h1 className=" text-white text-left text-4xl font-bold tracking-wider mt-6 mb-10">
+            <h1 className=" text-white text-left text-4xl font-semibold tracking-wider mt-6 mb-10">
               Recent UndrRight Responses
             </h1>
             <div className="flex flex-wrap justify-center gap-6">
               {/* <!-- Card 1 --> */}
               <div
-                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px]  border "
+                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full md:w-[400px]  border "
                 style={{
                   background:
                     "linear-gradient(20.85deg, #3FEDEE 1.41%, #487CD9 100%)",
@@ -329,7 +329,7 @@ const Page = () => {
               </div>
               {/* <!-- Card 2 --> */}
               <div
-                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px]  border "
+                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full md:w-[400px]  border "
                 style={{
                   background:
                     "linear-gradient(20.85deg, #3FEDEE 1.41%, #487CD9 100%)",
@@ -384,7 +384,7 @@ const Page = () => {
               </div>
               {/* <!-- Card 3 --> */}
               <div
-                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full sm:w-[400px]  border "
+                class=" rounded-2xl py-6 px-2 text-center flex flex-col w-full md:w-[400px]  border "
                 style={{
                   background:
                     "linear-gradient(20.85deg, #3FEDEE 1.41%, #487CD9 100%)",
